@@ -33,11 +33,12 @@ productos = [
         "precio": 180.00,
         "stock": 5
     }
-]
 
-# Demostración: Mostrar el inventario actual en consola
-print("Inventario disponible:")
-print("--------------------------------")
-for p in productos:
-    print(f"ID: {p['id']} | {p['nombre']:<8} | Precio: ${p['precio']:.2f} | Stock: {p['stock']}")
-print("--------------------------------")
+# Mostrar todos los productos
+print("\n--- INVENTARIO ---")
+for producto in productos:
+    print(f"ID: {producto['id']}")
+    print(f"Nombre: {producto['nombre']}")
+    print(f"Precio: ${producto['precio']:.2f}")
+    print(f"Stock: {producto['stock']}")
+    print("-------------------")
